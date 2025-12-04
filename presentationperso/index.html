@@ -69,10 +69,10 @@
             const currentTheme = themeLink.getAttribute('href');
 
             if (currentTheme.includes('style15.css')) {
-                themeLink.setAttribute('href', 'css/style9_darkg.css');
+                themeLink.setAttribute('href', '../css/style9_darkg.css');
                 localStorage.setItem('theme', 'dark');
             } else {
-                themeLink.setAttribute('href', 'css/style15.css');
+                themeLink.setAttribute('href', '../css/style15.css');
                 localStorage.setItem('theme', 'light');
             }
         }
@@ -81,7 +81,7 @@
             const savedTheme = localStorage.getItem('theme');
             const themeLink = document.getElementById('theme-style');
             if (savedTheme === 'dark') {
-                themeLink.setAttribute('href', 'css/style9_darkg.css');
+                themeLink.setAttribute('href', '../css/style9_darkg.css');
             }
         }
     </script>
